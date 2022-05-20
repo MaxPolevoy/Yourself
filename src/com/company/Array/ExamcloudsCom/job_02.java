@@ -1,4 +1,4 @@
-package com.company.Array;
+package com.company.Array.ExamcloudsCom;
 
 /*Создать массив типа String размером 3х6.
         И записать в него значения:
