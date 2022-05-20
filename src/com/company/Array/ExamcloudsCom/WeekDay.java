@@ -1,6 +1,6 @@
-package com.company.Array;
+package com.company.Array.ExamcloudsCom;
 
-public class ArrayDemo1 {
+public class WeekDay {
     public static void main(String[] args) {
         String [] week = new String[7];
         week[0] = "Пн";
@@ -11,6 +11,5 @@ public class ArrayDemo1 {
         week[5] = "Сб";
         week[6] = "Вс";
         System.out.println(week[6]);
-
     }
 }
