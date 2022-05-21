@@ -12,8 +12,8 @@ public class job_02 {
         String[][] TwoArray = new String[3][6];
         char simbyl = 'a';
 
-        for (int i = 0; i < args[1].length(); i++) {
-            for (int j = 0; j < args[0].length(); j++) {
+        for (int i = 0; i < TwoArray.length; i++) {
+            for (int j = 0; j < TwoArray.length; j++) {
                 TwoArray[i][j] = simbyl + "" + (j + 1);
                 System.out.print(TwoArray[i][j] + " ");
             }
