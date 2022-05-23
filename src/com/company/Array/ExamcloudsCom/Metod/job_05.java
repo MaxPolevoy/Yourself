@@ -8,7 +8,7 @@ public class job_05 {
     public static void main(String[] args) {
         int[][] array2 = new int[5][2];
         int[][] array = {
-                {8, 1, 3, 8, 5, 6, 7, 4},
+                {8, 3, 1, 8, 5, 6, 7, 4},
                 {3, 3, 4, 5, 9, 7, 8, 6},
                 {10, 4, 5, 6, 7, 8, 9, 3},
                 {4, 5, 6, 7, 8, 9, 10, 11},
@@ -40,11 +40,22 @@ public class job_05 {
         // мин число строки
         for (int row = 0; row < array.length; row++) {
             for (int col = 1; col < array[row].length; col++) {
-               // min = Math.min(min, array[col]);
+                // min = Math.min(min, array[col]);
             }
         }
         System.out.print(min + " ");
         System.out.println();
+
+        //i - столбец
+        min = 0;
+        int i=Math.min(0,0);
+        for (int j = 0; j < array[i].length; j++) {
+            if (array[i][j] < array[i][min]) {
+                min = j;
+            }
+        }
+        System.out.println(min);
+//array[i,min] - мин элемент i столбца
     }
 }
 
