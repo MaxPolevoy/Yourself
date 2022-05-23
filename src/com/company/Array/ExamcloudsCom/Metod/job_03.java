@@ -1,4 +1,4 @@
-package com.company.Array.ExamcloudsCom;
+package com.company.Array.ExamcloudsCom.Metod;
 
 /*Создать массив типа String размером 3х6.
         И записать в него значения:
@@ -7,13 +7,13 @@ package com.company.Array.ExamcloudsCom;
         c1  c2   c3  c4  c5  c6
         Распечатать массив.*/
 
-public class job_02 {
+public class job_03 {
     public static void main(String[] args) {
         String[][] TwoArray = new String[3][6];
         char simbyl = 'a';
 
         for (int i = 0; i < TwoArray.length; i++) {
-            for (int j = 0; j < TwoArray.length; j++) {
+            for (int j = 0; j < TwoArray[i].length; j++) {
                 TwoArray[i][j] = simbyl + "" + (j + 1);
                 System.out.print(TwoArray[i][j] + " ");
             }

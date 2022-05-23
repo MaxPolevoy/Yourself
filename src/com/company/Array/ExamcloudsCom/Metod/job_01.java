@@ -1,4 +1,4 @@
-package com.company.Array.ExamcloudsCom;
+package com.company.Array.ExamcloudsCom.Metod;
 
 /*
 Создать массив типа String с размером 7.
