@@ -14,48 +14,21 @@ public class job_05 {
                 {4, 5, 6, 7, 8, 9, 10, 11},
                 {5, 6, 7, 8, 9, 10, 5, 12},
         };
-        int max = array[0][0];
-        int min = array[0][0];
+        for (int i = 0; i < array.length; i++) {
+            int min = array[i][0];
+            int max = array[i][0];
 
-        for (int[] row : array) {
-            for (int col : row) {
-                if (max < col) {
-                    max = col;
+            for (int j = 0; j < array[0].length; j++) {
+                if (min > array[i][j]) {
+                    min = array[i][j];
+                }
+                if (max < array[i][j]) {
+                    max = array[i][j];
                 }
             }
-            System.out.print(max);
-            System.out.println();
-        }
-        System.out.println();
-        //мин число колонки 0
-        for (int col = 0; col < array.length; col++) {
-            if (min > array[col][0]) {
-                min = array[col][0];
-            }
+            System.out.println("Максимальный элемент " + max + " Минимальный элемент " + min );
 
         }
-        System.out.print(min);
-        System.out.println();
-
-        // мин число строки
-        for (int row = 0; row < array.length; row++) {
-            for (int col = 1; col < array[row].length; col++) {
-                // min = Math.min(min, array[col]);
-            }
-        }
-        System.out.print(min + " ");
-        System.out.println();
-
-        //i - столбец
-        min = 0;
-        int i=Math.min(0,0);
-        for (int j = 0; j < array[i].length; j++) {
-            if (array[i][j] < array[i][min]) {
-                min = j;
-            }
-        }
-        System.out.println(min);
-//array[i,min] - мин элемент i столбца
     }
 }
 
