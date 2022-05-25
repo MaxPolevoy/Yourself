@@ -29,6 +29,15 @@ public class job_05 {
             System.out.println("Максимальный элемент " + max + " Минимальный элемент " + min );
 
         }
+        int[][] twoD = new int[5][2];
+        int i, j, k = 0;
+        for (i = 0; i < 5; i++) {
+            for (j = 0; j < 2; j++) {
+                twoD[i][j] = k++;
+                System.out.print(twoD[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
 
